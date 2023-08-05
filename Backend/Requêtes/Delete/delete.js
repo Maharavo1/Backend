@@ -1,4 +1,4 @@
-let deletes ;
+let Del ;
 
 /*role */
 const deleteRole = ` 
@@ -10,8 +10,8 @@ const deleteUser = `
         DELETE FROM "user" WHERE id = $1;
 `;
 /*PAYEMENT_METHOD*/
-const deletePayement_method = ` 
-        DELETE FROM "payement_method" WHERE id = $1;
+const deletePayment_method = ` 
+        DELETE FROM "payment_method" WHERE id = $1;
 `;
 
 /*CITY*/
@@ -76,7 +76,7 @@ const deleteHave_reduce_price_conference_room = `
 `;
 
 
-export default deletes ={
+export default Del ={
          deleteCity,
         deleteConference_room,
         deleteDiscount,
@@ -84,7 +84,7 @@ export default deletes ={
         deleteHave_reduce_price_conference_room,
         deleteHave_room_type,
         deleteHotel,
-        deletePayement_method,
+        deletePayment_method,
         deleteRating,
         deleteReservation,
         deleteRole,
